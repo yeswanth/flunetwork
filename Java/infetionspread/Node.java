@@ -23,7 +23,7 @@ public class Node {
     private Random random;
 
     private final double vaccineEffectiveness = 0.7;
-    private final double infectionImmunity = 0.02;
+    private final double infectionImmunity = 0.7;
     private final double susceptibilityRecoveryValue = 0.003;
     private final int recoveryTime = 5;
     private final int vaccineEffectPeriod = 14;
