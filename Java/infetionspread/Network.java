@@ -19,7 +19,7 @@ public class Network {
     private Random random;
 
     private final int numberOfNodes = 100;
-    private final int multiplicationFactor = 10;
+    private final int multiplicationFactor = 5;
     private final int adjacentNodes = 10;
     private final int noInfected = 10;
     private final int noVaccinated = 10;
