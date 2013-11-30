@@ -34,10 +34,11 @@ class Network(object):
                 if len(self.graph[current_node].neighbours) >= self.adjacentNodes:
                     break
                 if len(self.graph[neighbour].neighbours) >= self.adjacentNodes:
+		    count += 1
                     continue
                 self.graph[current_node].neighbours.add(neighbour)
-                if self.graph[neighbour].neighbours.add(current_node):
-                    print "Adding link between " + current_node + " and " + neighbour
+                self.graph[neighbour].neighbours.add(current_node)
+                print "Adding link between ", current_node, " and ", neighbour
                 count += 1
             current_node += 1
 
