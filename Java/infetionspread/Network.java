@@ -19,6 +19,7 @@ public class Network {
     private Random random;
 
     private final int numberOfNodes = 100;
+    private final int multiplicationFactor = 5;
     private final int adjacentNodes = 10;
     private final int noInfected = 10;
     private final int noVaccinated = 10;
@@ -79,6 +80,7 @@ public class Network {
 
     public void runSimulationForTimeInstant(GraphStatistics graphStatistics) {
         updateSusceptibilities();
+        graphStatistics.setNodesInfectedByDispersionEffect(proximityEffect());
         graphStatistics.setNumberOfRecoveredNodes(checkRecoveryState());
         graphStatistics.setNumberOfNewlyInfectedNodes(spreadInfection());
         graphStatistics.setNumberOfInfectedNodes(infectedNodes.size());
@@ -127,6 +129,20 @@ public class Network {
             }
         }
         return newlyInfected;
+    }
+
+    private int proximityEffect() {
+        int nodesInfectedByDispersionEffect = 0;
+        double looplimit = (((double) infectedNodes.size() / numberOfNodes) * multiplicationFactor);
+        for(int count = 0; count < (int)looplimit; count++) {
+            int currentNode = random.nextInt(numberOfNodes);
+            if(graph.get(currentNode).forceInfect()) {
+                infectedNodes.add(currentNode);
+                System.out.println("Node infected by dispersion effect : " + currentNode);
+                nodesInfectedByDispersionEffect++;
+            }
+        }
+        return nodesInfectedByDispersionEffect;
     }
 
     public void setInfected() {

@@ -129,6 +129,13 @@ public class Node {
         return false;
     }
 
+    public boolean forceInfect() {
+        if(isInfected()) return false;
+        setInfected(true);
+        setInfectionTime(0);
+        return true;
+    }
+
     public boolean isRecovered() {
         if(!isInfected()) return false;
         infectionTime++;
