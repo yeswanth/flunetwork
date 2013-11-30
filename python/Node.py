@@ -10,7 +10,7 @@ class Node(object):
         self.infected = False
         self.vaccineEffectCompleted = True
         self.infectionTime = 0
-        self.neighbours = {}
+        self.neighbours = set()
         self.infectionTime = 0
         self.vaccineEffectiveness = 0.7
         self.infectionImmunity = 0.7
