@@ -14,16 +14,15 @@ public class Network {
     private Map<Integer, Node> graph = new HashMap<Integer, Node>();
     private Set<Integer> varyingSusceptibilityNodes = new HashSet<Integer>();
     private Set<Integer> infectedNodes = new HashSet<Integer>();
-    private Set<Integer> loopListVariable = new HashSet<Integer>();
 
     private Random random;
 
-    private final int numberOfNodes = 100;
+    private final int numberOfNodes = 10000;
     private final int multiplicationFactor = 5;
-    private final int adjacentNodes = 10;
-    private final int noInfected = 10;
-    private final int noVaccinated = 10;
-    private final double globalDecayValue = 0.00;
+    private final int adjacentNodes = 15;
+    private final int noInfected = 1;
+    private final int noVaccinated = 1000;
+    private final double globalDecayValue = 0.00000025;
 
     public Map<Integer, Node> getGraph() {
         return graph;
@@ -47,14 +46,6 @@ public class Network {
 
     public void setInfectedNodes(Set<Integer> infectedNodes) {
         this.infectedNodes = infectedNodes;
-    }
-
-    public Set<Integer> getLoopListVariable() {
-        return loopListVariable;
-    }
-
-    public void setLoopListVariable(Set<Integer> loopListVariable) {
-        this.loopListVariable = loopListVariable;
     }
 
     public Network() {
@@ -91,7 +82,7 @@ public class Network {
     }
 
     private void updateSusceptibilities() {
-        loopListVariable.clear();
+        Set<Integer> loopListVariable = new HashSet<Integer>();
         loopListVariable.addAll(varyingSusceptibilityNodes);
         for(int currentNode : loopListVariable) {
             if(!graph.get(currentNode).updateSusceptibility()) {
@@ -102,7 +93,7 @@ public class Network {
 
     private int checkRecoveryState() {
         int recoveredNodes = 0;
-        loopListVariable.clear();
+        Set<Integer> loopListVariable = new HashSet<Integer>();
         loopListVariable.addAll(infectedNodes);
         for(int currentNode : loopListVariable) {
             if(graph.get(currentNode).isRecovered()) {
@@ -117,7 +108,7 @@ public class Network {
 
     private int spreadInfection() {
         int newlyInfected = 0;
-        loopListVariable.clear();
+        Set<Integer> loopListVariable = new HashSet<Integer>();
         loopListVariable.addAll(infectedNodes);
         for(int infectedNode : loopListVariable) {
             for(int currentNode : graph.get(infectedNode).getNeighbours()) {
