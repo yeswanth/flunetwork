@@ -84,6 +84,10 @@ public class Network {
         graphStatistics.setNumberOfInfectedNodes(infectedNodes.size());
     }
 
+    public int getNumberOfInfectedNodes() {
+        return infectedNodes.size();
+    }
+
     private void updateSusceptibilities() {
         loopListVariable.clear();
         loopListVariable.addAll(varyingSusceptibilityNodes);
