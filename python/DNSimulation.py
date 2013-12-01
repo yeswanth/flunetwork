@@ -8,7 +8,7 @@ class DSNSimulation(object):
 
     def __init__(self):
         self.totalInfected = 0
-        self.runtime = 100
+        self.runtime = 365
 
     def initializeSimulation(self):
         self.network = Network()

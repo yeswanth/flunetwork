@@ -9,16 +9,19 @@ class GraphStatistics(object):
         numberOfInfectedNodes = 0
         numberOfNewlyInfectedNodes = 0
         numberOfRecoveredNodes = 0
+	nodesInfectedByDispersionEffect = 0
 
     def displayStatistics(self):
         print "---------- STATISTICS FOR TIME INSTANT : " , self.timeInstant , " ---------"
-        print "Number of infected nodes       : " , self.numberOfInfectedNodes
-        print "Number of newly infected nodes : " , self.numberOfNewlyInfectedNodes
-        print "Number of recovered nodes      : " , self.numberOfRecoveredNodes
+        print "Number of infected nodes               : " , self.numberOfInfectedNodes
+        print "Number of nodes infected by dispersion : " , self.nodesInfectedByDispersionEffect
+        print "Number of newly infected nodes         : " , self.numberOfNewlyInfectedNodes
+        print "Number of recovered nodes              : " , self.numberOfRecoveredNodes
 
     def resetStatistics(self):
         self.timeInstant = 0
         self.numberOfInfectedNodes = 0
         self.numberOfRecoveredNodes = 0
+	self.nodesInfectedByDispersionEffect = 0
 
 
