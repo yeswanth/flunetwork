@@ -2,12 +2,15 @@
 # -*- coding: utf-8 -*-
 import random
 import copy
+#import networkx as nx
+#import matplotlib.pyplot as plt
 from Node import Node
 
 
 class Network(object):
         
     def __init__(self):
+	#self.nxgraph = nx.Graph()
         self.graph = {} 
         self.numberOfNodes = 10000
         self.adjacentNodes = 15
@@ -21,12 +24,11 @@ class Network(object):
         self._initializeGraph()
 
     def _initializeGraph(self):
-        ## for-while
         current_node = 0
         while current_node < self.numberOfNodes:
             self.graph[current_node] = Node()
+	    #self.nxgraph.add_node(current_node)
             if (current_node != 0):
-                ## for-while
 		count = 0
 		while count < random.randrange(current_node):
 		    neighbour = random.randrange(current_node)
@@ -38,8 +40,11 @@ class Network(object):
 		    self.graph[current_node].neighbours.add(neighbour)
 		    self.graph[neighbour].neighbours.add(current_node)
 		    print "Adding link between ", current_node, " and ", neighbour
+		    #self.nxgraph.add_edge(current_node, neighbour)
 		    count += 1
 	    current_node += 1
+	#nx.draw_random(self.nxgraph)
+	#plt.show()
 
     def runSimulationForTimeInstant(self, graphStatistics):
         self.updateSusceptibilities()
