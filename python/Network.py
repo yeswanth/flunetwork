@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import random
+import copy
 from Node import Node
 
 
@@ -15,6 +16,7 @@ class Network(object):
         self.globalDecayValue = 0.00
         self.infectedNodes = set()
         self.varyingSusceptibilityNodes = set()
+        self.loopListVariable = set()
         self._initializeGraph()
 
 
@@ -51,18 +53,18 @@ class Network(object):
         return len(self.infectedNodes)
 
     def updateSusceptibilities(self):
-        loopListVariable.clear()
-        loopListVariable.addAll(varyingSusceptibilityNodes)
-        for currentNode in lostListVariable:
-            if not graph[currentNode].updateSusceptibility():
-                varyingSusceptibilityNodes.remove(currentNode)
+        self.loopListVariable.clear()
+        self.loopListVariable = copy.deepcopy(self.varyingSusceptibilityNodes)
+        for currentNode in self.loopListVariable:
+            if not self.graph[currentNode].updateSusceptibility():
+                self.varyingSusceptibilityNodes.remove(currentNode)
 
     def checkRecoveryState(self):
         recoveredNodes = 0
-        loopListVariable.clear()
-        loopListVariable.addAll(self.infectedNodes)
-        for currentNode in loopListVariable:
-            if graph[currentNode].isRecovered():
+        self.loopListVariable.clear()
+        self.loopListVariable = copy.deepcopy(self.infectedNodes)
+        for currentNode in self.loopListVariable:
+            if self.graph[currentNode].isRecovered():
                 print "+++Newly recovered node : " + currentNode
                 recoveredNodes += 1
                 self.infectedNodes.remove(currentNode)
@@ -71,9 +73,9 @@ class Network(object):
 
     def spreadInfection(self):
         newlyInfected = 0
-        loopListVariable.clear()
-        loopListVariable.addAll(self.infectedNodes)
-        for currentNode in loopListVariable:
+        self.loopListVariable.clear()
+        self.loopListVariable = copy.deepcopy(self.infectedNodes)
+        for currentNode in self.loopListVariable:
             for currentNode in graph.get(infectedNode).neighbours():
                 if graph[currentNode].infect(self.globalDecayValue):
                     print "---Newly infected node : " + currentNode

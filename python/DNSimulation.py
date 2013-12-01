@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from Network import Network
+from GraphStatistics import GraphStatistics
 
 class DSNSimulation(object):
 
@@ -29,7 +30,7 @@ class DSNSimulation(object):
 
     def endSimulation(self):
         print "------------------------- Ending Simulation -------------------------"
-        print "Total number of nodes infected during simulation : " + self.totalInfected
+        print "Total number of nodes infected during simulation : " , self.totalInfected
 
 
 if __name__ == '__main__':
