@@ -21,7 +21,7 @@ class Node(object):
 
     def vaccinate(self):
         self.vaccineEffectCompleted = False
-        self.targetSusceptibility = self.susceptibility * 1.0 - self.vaccineEffectiveness
+        self.targetSusceptibility = self.susceptibility * (1.0 - self.vaccineEffectiveness)
 
     def updateSusceptibility(self):
         if not self.vaccineEffectCompleted:
@@ -38,16 +38,16 @@ class Node(object):
         return False
 
     def infect(self, globalDecayValue):
-        if self.isInfected():
+        if self.infected:
             return False
-        if random.nextInt(1001) / 1000.00 < self.getCurrentSusceptibility():
-            self.setInfected(True)
-            self.setInfectionTime(0)
+        if random.randrange(1001) / 1000.00 < self.currentSusceptibility:
+            self.infected = True
+            self.infectionTime = 0
             return True
         return False
 
     def isRecovered(self):
-        if not self.isInfected():
+        if not self.infected:
             return False
         self.infectionTime += 1
         if self.infectionTime < self.recoveryTime:

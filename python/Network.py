@@ -45,12 +45,10 @@ class Network(object):
 
     def runSimulationForTimeInstant(self, graphStatistics):
         self.updateSusceptibilities()
-        graphStatistics.setNumberOfRecoveredNodes(self.checkRecoveryState())
-        graphStatistics.setNumberOfNewlyInfectedNodes(self.spreadInfection())
-        graphStatistics.setNumberOfInfectedNodes(len(self.infectedNodes))
+        graphStatistics.numberOfRecoveredNodes = self.checkRecoveryState()
+        graphStatistics.numberOfNewlyInfectedNodes = self.spreadInfection()
+        graphStatistics.numberOfInfectedNodes = len(self.infectedNodes)
 
-    def getNumberOfInfectedNodes(self):
-        return len(self.infectedNodes)
 
     def updateSusceptibilities(self):
         self.loopListVariable.clear()
@@ -65,20 +63,20 @@ class Network(object):
         self.loopListVariable = copy.deepcopy(self.infectedNodes)
         for currentNode in self.loopListVariable:
             if self.graph[currentNode].isRecovered():
-                print "+++Newly recovered node : " + currentNode
+                print "+++Newly recovered node : " , currentNode
                 recoveredNodes += 1
                 self.infectedNodes.remove(currentNode)
-                varyingSusceptibilityNodes.add(currentNode)
+                self.varyingSusceptibilityNodes.add(currentNode)
         return recoveredNodes
 
     def spreadInfection(self):
         newlyInfected = 0
         self.loopListVariable.clear()
         self.loopListVariable = copy.deepcopy(self.infectedNodes)
-        for currentNode in self.loopListVariable:
-            for currentNode in graph.get(infectedNode).neighbours():
-                if graph[currentNode].infect(self.globalDecayValue):
-                    print "---Newly infected node : " + currentNode
+        for infectedNode in self.loopListVariable:
+            for currentNode in self.graph.get(infectedNode).neighbours:
+                if self.graph[currentNode].infect(self.globalDecayValue):
+                    print "---Newly infected node : " , currentNode
                     newlyInfected += 1
                     self.infectedNodes.add(currentNode)
         return newlyInfected
@@ -91,7 +89,8 @@ class Network(object):
             self.graph[infected_node].infected = True
             if infected_node in self.infectedNodes:
                 continue
-	    self.infectedNodes.add(infected_node);
+
+            self.infectedNodes.add(infected_node)
             self.graph[infected_node].infectionTime = 0
             print "Added infected node : " , infected_node
             count += 1
@@ -102,11 +101,14 @@ class Network(object):
         while count < self.noVaccinated:
             vaccinated_node = random.randrange(len(self.graph))
             self.graph[vaccinated_node].vaccinate()
-	    self.varyingSusceptibilityNodes.add(vaccinated_node);
-	    if vaccinated_node not in self.infectedNodes:
+	    if vaccinated_node in self.varyingSusceptibilityNodes:
                 continue
+            self.varyingSusceptibilityNodes.add(vaccinated_node)
             self.graph[vaccinated_node].infected = False
-            self.infectedNodes.remove(vaccinated_node)
+            try:
+                self.infectedNodes.remove(vaccinated_node)
+            except KeyError,e:
+                print e
             print "Added vaccinated node : " , vaccinated_node
             count += 1
 

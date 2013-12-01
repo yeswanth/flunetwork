@@ -3,34 +3,12 @@
 
 
 class GraphStatistics(object):
-    timeInstant = 0
-    numberOfInfectedNodes = 0
-    numberOfNewlyInfectedNodes = 0
-    numberOfRecoveredNodes = 0
 
-    def getTimeInstant(self):
-        return self.timeInstant
-
-    def setTimeInstant(self, timeInstant):
-        self.timeInstant = self.timeInstant
-
-    def getNumberOfInfectedNodes(self):
-        return self.numberOfInfectedNodes
-
-    def setNumberOfInfectedNodes(self, numberOfInfectedNodes):
-        self.numberOfInfectedNodes = self.numberOfInfectedNodes
-
-    def getNumberOfNewlyInfectedNodes(self):
-        return self.numberOfNewlyInfectedNodes
-
-    def setNumberOfNewlyInfectedNodes(self, numberOfNewlyInfectedNodes):
-        self.numberOfNewlyInfectedNodes = self.numberOfNewlyInfectedNodes
-
-    def getNumberOfRecoveredNodes(self):
-        return self.numberOfRecoveredNodes
-
-    def setNumberOfRecoveredNodes(self, numberOfRecoveredNodes):
-        self.numberOfRecoveredNodes = self.numberOfRecoveredNodes
+    def __init__(self):
+        timeInstant = 0
+        numberOfInfectedNodes = 0
+        numberOfNewlyInfectedNodes = 0
+        numberOfRecoveredNodes = 0
 
     def displayStatistics(self):
         print "---------- STATISTICS FOR TIME INSTANT : " , self.timeInstant , " ---------"

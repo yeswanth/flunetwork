@@ -8,24 +8,24 @@ class DSNSimulation(object):
 
     def __init__(self):
         self.totalInfected = 0
-        self.runtime = 365
+        self.runtime = 100
 
     def initializeSimulation(self):
         self.network = Network()
         self.network.setInfected()
         self.network.setVaccinated()
-        self.totalInfected = self.network.getNumberOfInfectedNodes()
+        self.totalInfected = len(self.network.infectedNodes)
 
     def runSimulation(self):
         graphStatistics = GraphStatistics()
-        ## for-while
+        # for-while
         timeInstant = 0
         while timeInstant < self.runtime:
             graphStatistics.resetStatistics()
-            graphStatistics.setTimeInstant(timeInstant)
+            graphStatistics.timeInstant = timeInstant
             self.network.runSimulationForTimeInstant(graphStatistics)
             graphStatistics.displayStatistics()
-            self.totalInfected += graphStatistics.getNumberOfNewlyInfectedNodes()
+            self.totalInfected += graphStatistics.numberOfNewlyInfectedNodes
             timeInstant += 1
 
     def endSimulation(self):
