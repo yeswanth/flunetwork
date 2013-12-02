@@ -35,11 +35,11 @@ class Network(object):
                 if len(self.graph[current_node].neighbours) >= self.adjacentNodes:
                     break
                 if len(self.graph[neighbour].neighbours) >= self.adjacentNodes:
-		    count += 1
+                    count += 1
                     continue
                 self.graph[current_node].neighbours.add(neighbour)
                 self.graph[neighbour].neighbours.add(current_node)
-                print "Adding link between ", current_node, " and ", neighbour
+                print("Adding link between ", current_node, " and ", neighbour)
                 count += 1
             current_node += 1
 
@@ -63,7 +63,7 @@ class Network(object):
         self.loopListVariable = copy.deepcopy(self.infectedNodes)
         for currentNode in self.loopListVariable:
             if self.graph[currentNode].isRecovered():
-                print "+++Newly recovered node : " , currentNode
+                print("+++Newly recovered node : " , currentNode)
                 recoveredNodes += 1
                 self.infectedNodes.remove(currentNode)
                 self.varyingSusceptibilityNodes.add(currentNode)
@@ -76,7 +76,7 @@ class Network(object):
         for infectedNode in self.loopListVariable:
             for currentNode in self.graph.get(infectedNode).neighbours:
                 if self.graph[currentNode].infect(self.globalDecayValue):
-                    print "---Newly infected node : " , currentNode
+                    print("---Newly infected node : " , currentNode)
                     newlyInfected += 1
                     self.infectedNodes.add(currentNode)
         return newlyInfected
@@ -92,7 +92,7 @@ class Network(object):
 
             self.infectedNodes.add(infected_node)
             self.graph[infected_node].infectionTime = 0
-            print "Added infected node : " , infected_node
+            print("Added infected node : " , infected_node)
             count += 1
 
     def setVaccinated(self):
@@ -101,15 +101,15 @@ class Network(object):
         while count < self.noVaccinated:
             vaccinated_node = random.randrange(len(self.graph))
             self.graph[vaccinated_node].vaccinate()
-	    if vaccinated_node in self.varyingSusceptibilityNodes:
+            if vaccinated_node in self.varyingSusceptibilityNodes:
                 continue
             self.varyingSusceptibilityNodes.add(vaccinated_node)
             self.graph[vaccinated_node].infected = False
             try:
                 self.infectedNodes.remove(vaccinated_node)
-            except KeyError,e:
-                print e
-            print "Added vaccinated node : " , vaccinated_node
+            except KeyError as e:
+                print(e)
+            print("Added vaccinated node : " , vaccinated_node)
             count += 1
 
 

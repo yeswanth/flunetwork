@@ -29,8 +29,8 @@ class DSNSimulation(object):
             timeInstant += 1
 
     def endSimulation(self):
-        print "------------------------- Ending Simulation -------------------------"
-        print "Total number of nodes infected during simulation : " , self.totalInfected
+        print("------------------------- Ending Simulation -------------------------")
+        print("Total number of nodes infected during simulation : " , self.totalInfected)
 
 
 if __name__ == '__main__':
