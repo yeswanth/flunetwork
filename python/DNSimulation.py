@@ -10,7 +10,7 @@ class DSNSimulation(object):
 
     def __init__(self):
         self.totalInfected = 0
-        self.runtime = 200
+        self.runtime = 150
 
     def initializeSimulation(self):
         self.network = Network()
@@ -27,7 +27,7 @@ class DSNSimulation(object):
         while timeInstant < self.runtime:
             graphStatistics = GraphStatistics()
             graphStatistics.resetStatistics()
-            graphStatistics.timeInstant = timeInstant
+            graphStatistics.timeInstant = (timeInstant + 1)
             self.network.runSimulationForTimeInstant(graphStatistics)
             graphStatistics.displayStatistics()
             self.totalInfected += graphStatistics.numberOfNewlyInfectedNodes
