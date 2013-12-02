@@ -15,11 +15,12 @@ def GraphStatistics_encoder(obj):
 class GraphStatistics(object):
 
     def __init__(self):
-        timeInstant = 0
-        numberOfInfectedNodes = 0
-        numberOfNewlyInfectedNodes = 0
-        numberOfRecoveredNodes = 0
-	nodesInfectedByDispersionEffect = 0
+	self.numberOfRunthroughs = 1
+        self.timeInstant = 0
+        self.numberOfInfectedNodes = 0
+        self.numberOfNewlyInfectedNodes = 0
+        self.numberOfRecoveredNodes = 0
+	self.nodesInfectedByDispersionEffect = 0
 
     def displayStatistics(self):
         print "---------- STATISTICS FOR TIME INSTANT : " , self.timeInstant , " ---------"

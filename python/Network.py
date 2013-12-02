@@ -16,10 +16,10 @@ class Network(object):
         self.graph = {} 
         self.numberOfNodes = 10000
         self.adjacentNodes = 10
-        self.noInfected = 10
-        self.noVaccinated = 1000
+        self.noInfected = 0.001
+        self.noVaccinated = 0.1
         self.globalDecayValue = 0.00000025
-	self.proximityMultiplicationFactor = 20
+	self.proximityMultiplicationFactor = 0.002
         self.infectedNodes = set()
         self.varyingSusceptibilityNodes = set()
         self.loopListVariable = set()
@@ -95,7 +95,7 @@ class Network(object):
 
     def proximityEffect(self):
 	nodesInfectedByDispersionEffect = 0
-	loopLimit = (len(self.infectedNodes) / float(self.numberOfNodes)) * self.proximityMultiplicationFactor
+	loopLimit = (len(self.infectedNodes) / float(self.numberOfNodes)) * self.proximityMultiplicationFactor * self.numberOfNodes
 	count = 0
 	while (loopLimit - count) > 0.5:
 	    currentNode = random.randrange(self.numberOfNodes)
@@ -108,7 +108,7 @@ class Network(object):
 
     def setInfected(self):
         count = 0
-        while count < self.noInfected:
+        while count < (self.noInfected * self.numberOfNodes):
             infected_node = random.randrange(len(self.graph))
             if infected_node in self.infectedNodes:
                 continue
@@ -120,7 +120,7 @@ class Network(object):
 
     def setVaccinated(self):
         count = 0
-        while count < self.noVaccinated:
+        while count < (self.noVaccinated * self.numberOfNodes):
             vaccinated_node = random.randrange(len(self.graph))
 	    if vaccinated_node in self.infectedNodes:
 		continue
