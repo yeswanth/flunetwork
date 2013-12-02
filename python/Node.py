@@ -17,7 +17,7 @@ class Node(object):
         self.susceptibilityRecoveryValue = 0.003
         self.recoveryTime = 5
         self.vaccineEffectPeriod = 14
-        print "Value of susceptibility for node = " , self.susceptibility
+        print("Value of susceptibility for node = " , self.susceptibility)
 
     def vaccinate(self):
         self.vaccineEffectCompleted = False
