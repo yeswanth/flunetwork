@@ -13,7 +13,7 @@ class Network(object):
 	#self.nxgraph = nx.Graph()
         self.graph = {} 
         self.numberOfNodes = 10000
-        self.adjacentNodes = 15
+        self.adjacentNodes = 10
         self.noInfected = 10
         self.noVaccinated = 1000
         self.globalDecayValue = 0.00000025

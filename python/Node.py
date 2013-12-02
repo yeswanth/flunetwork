@@ -11,9 +11,9 @@ class Node(object):
         self.infected = False
         self.vaccineEffectCompleted = True
         self.infectionTime = 0
-        self.vaccineEffectiveness = self.infectionImmunity = 0.7
-        self.susceptibilityRecoveryValue = 0.003
-        self.recoveryTime = 5
+        self.vaccineEffectiveness = self.infectionImmunity = 0.6
+        self.susceptibilityRecoveryValue = 0.002167
+        self.recoveryTime = 7
         self.vaccineEffectPeriod = 14
         print "Value of susceptibility for node = " , self.susceptibility
 
@@ -29,7 +29,7 @@ class Node(object):
             self.vaccineEffectCompleted = True
             self.targetSusceptibility = self.susceptibility
         if self.currentSusceptibility < self.targetSusceptibility:
-            self.currentSusceptibility += self.susceptibilityRecoveryValue
+            self.currentSusceptibility += (self.susceptibilityRecoveryValue * self.susceptibility)
             if self.currentSusceptibility > self.targetSusceptibility:
                 self.currentSusceptibility = self.targetSusceptibility
             return True
