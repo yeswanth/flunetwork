@@ -11,13 +11,15 @@ class Network(object):
         
     def __init__(self):
 	#self.nxgraph = nx.Graph()
+	#plt.ion()
+	#plt.figure(figsize=(24,14))
         self.graph = {} 
         self.numberOfNodes = 10000
         self.adjacentNodes = 10
         self.noInfected = 10
         self.noVaccinated = 1000
         self.globalDecayValue = 0.00000025
-	self.proximityMultiplicationFactor = 5
+	self.proximityMultiplicationFactor = 20
         self.infectedNodes = set()
         self.varyingSusceptibilityNodes = set()
         self.loopListVariable = set()
@@ -43,8 +45,11 @@ class Network(object):
 		    #self.nxgraph.add_edge(current_node, neighbour)
 		    count += 1
 	    current_node += 1
-	#nx.draw_random(self.nxgraph)
+	#self.pos = nx.random_layout(self.nxgraph)
+	#plt.draw()
+	#nx.draw(self.nxgraph, self.pos, alpha=0.5, node_color='g')
 	#plt.show()
+	#plt.pause(0.1)
 
     def runSimulationForTimeInstant(self, graphStatistics):
         self.updateSusceptibilities()
@@ -52,6 +57,10 @@ class Network(object):
         graphStatistics.numberOfRecoveredNodes = self.checkRecoveryState()
         graphStatistics.numberOfNewlyInfectedNodes = self.spreadInfection()
         graphStatistics.numberOfInfectedNodes = len(self.infectedNodes)
+	#nx.draw_networkx_nodes(self.nxgraph, self.pos, alpha=0.5, nodelist=self.infectedNodes, node_color='r')
+	#nx.draw_networkx_nodes(self.nxgraph, self.pos, alpha=0.5, nodelist=self.varyingSusceptibilityNodes, node_color='b')
+	#plt.show()
+	#plt.pause(1)
 
     def updateSusceptibilities(self):
         self.loopListVariable.clear()
@@ -98,7 +107,6 @@ class Network(object):
 	return nodesInfectedByDispersionEffect
 
     def setInfected(self):
-        ## for-while
         count = 0
         while count < self.noInfected:
             infected_node = random.randrange(len(self.graph))
@@ -111,7 +119,6 @@ class Network(object):
             count += 1
 
     def setVaccinated(self):
-        ## for-while
         count = 0
         while count < self.noVaccinated:
             vaccinated_node = random.randrange(len(self.graph))

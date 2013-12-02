@@ -19,7 +19,6 @@ class DSNSimulation(object):
         self.totalInfected = len(self.network.infectedNodes)
 
     def runSimulation(self):
-        # for-while
         timeInstant = 0
         allstats = []
         json_outfile = open('stats.json', 'w')

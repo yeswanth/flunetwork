@@ -6,7 +6,8 @@ def GraphStatistics_encoder(obj):
         return { 'timeInstant':obj.timeInstant,
                  'numberOfInfectedNodes' : obj.numberOfInfectedNodes,
                  'numberOfNewlyInfectedNodes' : obj.numberOfNewlyInfectedNodes,
-                 'numberOfRecoveredNodes' : obj.numberOfRecoveredNodes
+                 'numberOfRecoveredNodes' : obj.numberOfRecoveredNodes,
+		 'numberOfNodesInfectedByDispersion' : obj.nodesInfectedByDispersionEffect,
         }
 
     raise TypeError(repr(obj) + " is not JSON serializable")
