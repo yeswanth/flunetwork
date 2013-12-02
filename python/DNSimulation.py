@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import json
+
 from Network import Network
-from GraphStatistics import GraphStatistics
+from GraphStatistics import *
 
 class DSNSimulation(object):
 
@@ -17,16 +19,26 @@ class DSNSimulation(object):
         self.totalInfected = len(self.network.infectedNodes)
 
     def runSimulation(self):
-        graphStatistics = GraphStatistics()
         # for-while
         timeInstant = 0
+        allstats = []
+        json_outfile = open('stats.json', 'w')
+        
         while timeInstant < self.runtime:
+            graphStatistics = GraphStatistics()
             graphStatistics.resetStatistics()
             graphStatistics.timeInstant = timeInstant
             self.network.runSimulationForTimeInstant(graphStatistics)
             graphStatistics.displayStatistics()
             self.totalInfected += graphStatistics.numberOfNewlyInfectedNodes
             timeInstant += 1
+            allstats.append(graphStatistics)
+        
+        json.dump(allstats, json_outfile, default=GraphStatistics_encoder, indent=4)
+        json_outfile.write("\n")
+        json_outfile.close()
+        
+        print("\n\nWrote statistics to " + json_outfile.name + "\n\n")
 
     def endSimulation(self):
         print "------------------------- Ending Simulation -------------------------"

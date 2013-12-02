@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+def GraphStatistics_encoder(obj):
+    if isinstance(obj, GraphStatistics):
+        return { 'timeInstant':obj.timeInstant,
+                 'numberOfInfectedNodes' : obj.numberOfInfectedNodes,
+                 'numberOfNewlyInfectedNodes' : obj.numberOfNewlyInfectedNodes,
+                 'numberOfRecoveredNodes' : obj.numberOfRecoveredNodes
+        }
+
+    raise TypeError(repr(obj) + " is not JSON serializable")
 
 class GraphStatistics(object):
 
