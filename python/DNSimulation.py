@@ -11,6 +11,7 @@ class DSNSimulation(object):
     def __init__(self):
         self.totalInfected = 0
         self.runtime = 150
+	self.graphStatistics = []
 
     def initializeSimulation(self):
         self.network = Network()
@@ -20,24 +21,13 @@ class DSNSimulation(object):
 
     def runSimulation(self):
         timeInstant = 0
-        allstats = []
-        json_outfile = open('stats.json', 'w')
         
         while timeInstant < self.runtime:
-            graphStatistics = GraphStatistics()
-            graphStatistics.resetStatistics()
-            graphStatistics.timeInstant = (timeInstant + 1)
-            self.network.runSimulationForTimeInstant(graphStatistics)
-            graphStatistics.displayStatistics()
-            self.totalInfected += graphStatistics.numberOfNewlyInfectedNodes
-            timeInstant += 1
-            allstats.append(graphStatistics)
-        
-        json.dump(allstats, json_outfile, default=GraphStatistics_encoder, indent=4)
-        json_outfile.write("\n")
-        json_outfile.close()
-        
-        print("\n\nWrote statistics to " + json_outfile.name + "\n\n")
+            self.graphStatistics[timeInstant].timeInstant = (timeInstant + 1)
+            self.network.runSimulationForTimeInstant(self.graphStatistics[timeInstant])
+            self.graphStatistics[timeInstant].displayStatistics()
+            self.totalInfected += self.graphStatistics[timeInstant].numberOfNewlyInfectedNodes
+            timeInstant += 1    
 
     def endSimulation(self):
         print "------------------------- Ending Simulation -------------------------"
@@ -45,8 +35,24 @@ class DSNSimulation(object):
 
 
 if __name__ == '__main__':
+    count = 0
     dsnSimulation = DSNSimulation()
-    dsnSimulation.initializeSimulation()
-    dsnSimulation.runSimulation()
-    dsnSimulation.endSimulation()
+    while count < dsnSimulation.runtime:
+	graphStatistic = GraphStatistics()
+	graphStatistic.resetStatistics()
+	dsnSimulation.graphStatistics.append(graphStatistic)
+	count += 1
 
+    count = 0
+    while count < numberOfRunthroughs:
+	dsnSimulation.initializeSimulation()
+	dsnSimulation.runSimulation()
+	dsnSimulation.endSimulation()
+	count += 1
+
+    json_outfile = open('stats.json', 'w')
+    json.dump(dsnSimulation.graphStatistics, json_outfile, default=GraphStatistics_encoder, indent=4)
+    json_outfile.write("\n")
+    json_outfile.close()
+
+    print("\n\nWrote statistics to " + json_outfile.name + "\n\n")

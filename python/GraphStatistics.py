@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+numberOfRunthroughs = 1
+
 def GraphStatistics_encoder(obj):
     if isinstance(obj, GraphStatistics):
         return { 'timeInstant':obj.timeInstant,
-                 'numberOfInfectedNodes' : obj.numberOfInfectedNodes,
-                 'numberOfNewlyInfectedNodes' : obj.numberOfNewlyInfectedNodes,
-                 'numberOfRecoveredNodes' : obj.numberOfRecoveredNodes,
-		 'numberOfNodesInfectedByDispersion' : obj.nodesInfectedByDispersionEffect,
+                 'numberOfInfectedNodes' : (obj.numberOfInfectedNodes / numberOfRunthroughs),
+                 'numberOfNewlyInfectedNodes' : (obj.numberOfNewlyInfectedNodes / numberOfRunthroughs),
+                 'numberOfRecoveredNodes' : (obj.numberOfRecoveredNodes / numberOfRunthroughs),
+		 'numberOfNodesInfectedByDispersion' : (obj.nodesInfectedByDispersionEffect / numberOfRunthroughs),
         }
 
     raise TypeError(repr(obj) + " is not JSON serializable")
@@ -15,7 +17,6 @@ def GraphStatistics_encoder(obj):
 class GraphStatistics(object):
 
     def __init__(self):
-	self.numberOfRunthroughs = 1
         self.timeInstant = 0
         self.numberOfInfectedNodes = 0
         self.numberOfNewlyInfectedNodes = 0

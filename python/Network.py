@@ -53,10 +53,10 @@ class Network(object):
 
     def runSimulationForTimeInstant(self, graphStatistics):
         self.updateSusceptibilities()
-	graphStatistics.nodesInfectedByDispersionEffect = self.proximityEffect()
-        graphStatistics.numberOfRecoveredNodes = self.checkRecoveryState()
-        graphStatistics.numberOfNewlyInfectedNodes = self.spreadInfection()
-        graphStatistics.numberOfInfectedNodes = len(self.infectedNodes)
+	graphStatistics.nodesInfectedByDispersionEffect += self.proximityEffect()
+        graphStatistics.numberOfRecoveredNodes += self.checkRecoveryState()
+        graphStatistics.numberOfNewlyInfectedNodes += self.spreadInfection()
+        graphStatistics.numberOfInfectedNodes += len(self.infectedNodes)
 	#nx.draw_networkx_nodes(self.nxgraph, self.pos, alpha=0.5, nodelist=self.infectedNodes, node_color='r')
 	#nx.draw_networkx_nodes(self.nxgraph, self.pos, alpha=0.5, nodelist=self.varyingSusceptibilityNodes, node_color='b')
 	#plt.show()
