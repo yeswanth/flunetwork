@@ -9,7 +9,7 @@ from Node import Node
 
 class Network(object):
         
-    def __init__(self):
+    def __init__(self, recoveryRate):
 	#self.nxgraph = nx.Graph()
 	#plt.ion()
 	#plt.figure(figsize=(24,14))
@@ -19,16 +19,16 @@ class Network(object):
         self.noInfected = 0.001
         self.noVaccinated = 0.1
         self.globalDecayValue = 0.00000025
-	self.proximityMultiplicationFactor = 0.002
+	self.proximityMultiplicationFactor = 0.02
         self.infectedNodes = set()
         self.varyingSusceptibilityNodes = set()
         self.loopListVariable = set()
-        self._initializeGraph()
+        self._initializeGraph(recoveryRate)
 
-    def _initializeGraph(self):
+    def _initializeGraph(self, recoveryRate):
         current_node = 0
         while current_node < self.numberOfNodes:
-            self.graph[current_node] = Node()
+            self.graph[current_node] = Node(recoveryRate)
 	    #self.nxgraph.add_node(current_node)
             if (current_node != 0):
 		count = 0
@@ -47,7 +47,7 @@ class Network(object):
 	    current_node += 1
 	#self.pos = nx.random_layout(self.nxgraph)
 	#plt.draw()
-	#nx.draw(self.nxgraph, self.pos, alpha=0.5, node_color='g')
+	#nx.draw(self.nxgraph, self.pos, node_size=1000, alpha=0.5, node_color='g')
 	#plt.show()
 	#plt.pause(0.1)
 
@@ -57,10 +57,12 @@ class Network(object):
         graphStatistics.numberOfRecoveredNodes += self.checkRecoveryState()
         graphStatistics.numberOfNewlyInfectedNodes += self.spreadInfection()
         graphStatistics.numberOfInfectedNodes += len(self.infectedNodes)
-	#nx.draw_networkx_nodes(self.nxgraph, self.pos, alpha=0.5, nodelist=self.infectedNodes, node_color='r')
-	#nx.draw_networkx_nodes(self.nxgraph, self.pos, alpha=0.5, nodelist=self.varyingSusceptibilityNodes, node_color='b')
+	#plt.clf()
+	#nx.draw(self.nxgraph, self.pos, node_size=1000, alpha=0.5, node_color='g')
+	#nx.draw_networkx_nodes(self.nxgraph, self.pos, node_size=1000, alpha=0.5, nodelist=self.infectedNodes, node_color='r')
+	#nx.draw_networkx_nodes(self.nxgraph, self.pos, node_size=1000, alpha=0.5, nodelist=self.varyingSusceptibilityNodes, node_color='b')
 	#plt.show()
-	#plt.pause(1)
+	#plt.pause(0.05)
 
     def updateSusceptibilities(self):
         self.loopListVariable.clear()
@@ -91,6 +93,8 @@ class Network(object):
                     print "---Newly infected node : " , currentNode
                     newlyInfected += 1
                     self.infectedNodes.add(currentNode)
+		    if currentNode in self.varyingSusceptibilityNodes:
+			self.varyingSusceptibilityNodes.remove(currentNode)
         return newlyInfected
 
     def proximityEffect(self):
@@ -103,6 +107,8 @@ class Network(object):
 		self.infectedNodes.add(currentNode)
 		print "Node infected by dispersion effect : " , currentNode
 		nodesInfectedByDispersionEffect += 1
+		if currentNode in self.varyingSusceptibilityNodes:
+		    self.varyingSusceptibilityNodes.remove(currentNode)
 	    count += 1
 	return nodesInfectedByDispersionEffect
 

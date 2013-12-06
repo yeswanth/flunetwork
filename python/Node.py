@@ -4,7 +4,7 @@ import random
 
 class Node(object):
 
-    def __init__(self):
+    def __init__(self, recoveryRate):
         self.susceptibility = random.randrange(35) / 1000.00 + 0.016
         self.neighbours = set()
         self.currentSusceptibility = self.targetSusceptibility = self.susceptibility
@@ -12,10 +12,12 @@ class Node(object):
         self.vaccineEffectCompleted = True
         self.infectionTime = 0
         self.vaccineEffectiveness = self.infectionImmunity = 0.6
-        self.susceptibilityRecoveryValue = 0.002167
+        #self.susceptibilityRecoveryValue = 0.002167
+	self.susceptibilityRecoveryValue = recoveryRate
         self.recoveryTime = 7
         self.vaccineEffectPeriod = 14
         print "Value of susceptibility for node = " , self.susceptibility
+	print "Recovery value = : " , self.susceptibilityRecoveryValue
 
     def vaccinate(self):
         self.vaccineEffectCompleted = False
