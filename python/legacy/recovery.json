@@ -1,0 +1,198 @@
+[
+    {
+        "recoveryRate": 0.2, 
+        "totalInfected": 6404
+    }, 
+    {
+        "recoveryRate": 0.4, 
+        "totalInfected": 6526
+    }, 
+    {
+        "recoveryRate": 0.6, 
+        "totalInfected": 6591
+    }, 
+    {
+        "recoveryRate": 0.8, 
+        "totalInfected": 6681
+    }, 
+    {
+        "recoveryRate": 1.0, 
+        "totalInfected": 6743
+    }, 
+    {
+        "recoveryRate": 1.2, 
+        "totalInfected": 6755
+    }, 
+    {
+        "recoveryRate": 1.4, 
+        "totalInfected": 6808
+    }, 
+    {
+        "recoveryRate": 1.6, 
+        "totalInfected": 6894
+    }, 
+    {
+        "recoveryRate": 1.8, 
+        "totalInfected": 6899
+    }, 
+    {
+        "recoveryRate": 2.0, 
+        "totalInfected": 6889
+    }, 
+    {
+        "recoveryRate": 2.2, 
+        "totalInfected": 6934
+    }, 
+    {
+        "recoveryRate": 2.4, 
+        "totalInfected": 6928
+    }, 
+    {
+        "recoveryRate": 2.6, 
+        "totalInfected": 6899
+    }, 
+    {
+        "recoveryRate": 2.8, 
+        "totalInfected": 6901
+    }, 
+    {
+        "recoveryRate": 3.0, 
+        "totalInfected": 6933
+    }, 
+    {
+        "recoveryRate": 3.2, 
+        "totalInfected": 6897
+    }, 
+    {
+        "recoveryRate": 3.4, 
+        "totalInfected": 6917
+    }, 
+    {
+        "recoveryRate": 3.6, 
+        "totalInfected": 6906
+    }, 
+    {
+        "recoveryRate": 3.8, 
+        "totalInfected": 6936
+    }, 
+    {
+        "recoveryRate": 4.0, 
+        "totalInfected": 6906
+    }, 
+    {
+        "recoveryRate": 4.2, 
+        "totalInfected": 6937
+    }, 
+    {
+        "recoveryRate": 4.4, 
+        "totalInfected": 6942
+    }, 
+    {
+        "recoveryRate": 4.6, 
+        "totalInfected": 6914
+    }, 
+    {
+        "recoveryRate": 4.8, 
+        "totalInfected": 6892
+    }, 
+    {
+        "recoveryRate": 5.0, 
+        "totalInfected": 6921
+    }, 
+    {
+        "recoveryRate": 5.2, 
+        "totalInfected": 6965
+    }, 
+    {
+        "recoveryRate": 5.4, 
+        "totalInfected": 6931
+    }, 
+    {
+        "recoveryRate": 5.6, 
+        "totalInfected": 6970
+    }, 
+    {
+        "recoveryRate": 5.8, 
+        "totalInfected": 6957
+    }, 
+    {
+        "recoveryRate": 6.0, 
+        "totalInfected": 6948
+    }, 
+    {
+        "recoveryRate": 6.2, 
+        "totalInfected": 6925
+    }, 
+    {
+        "recoveryRate": 6.4, 
+        "totalInfected": 6956
+    }, 
+    {
+        "recoveryRate": 6.6, 
+        "totalInfected": 6972
+    }, 
+    {
+        "recoveryRate": 6.8, 
+        "totalInfected": 6964
+    }, 
+    {
+        "recoveryRate": 7.0, 
+        "totalInfected": 6943
+    }, 
+    {
+        "recoveryRate": 7.2, 
+        "totalInfected": 6906
+    }, 
+    {
+        "recoveryRate": 7.4, 
+        "totalInfected": 6930
+    }, 
+    {
+        "recoveryRate": 7.6, 
+        "totalInfected": 6925
+    }, 
+    {
+        "recoveryRate": 7.8, 
+        "totalInfected": 6959
+    }, 
+    {
+        "recoveryRate": 8.0, 
+        "totalInfected": 6937
+    }, 
+    {
+        "recoveryRate": 8.2, 
+        "totalInfected": 6891
+    }, 
+    {
+        "recoveryRate": 8.4, 
+        "totalInfected": 6940
+    }, 
+    {
+        "recoveryRate": 8.6, 
+        "totalInfected": 6938
+    }, 
+    {
+        "recoveryRate": 8.8, 
+        "totalInfected": 6943
+    }, 
+    {
+        "recoveryRate": 9.0, 
+        "totalInfected": 6936
+    }, 
+    {
+        "recoveryRate": 9.2, 
+        "totalInfected": 6926
+    }, 
+    {
+        "recoveryRate": 9.4, 
+        "totalInfected": 6998
+    }, 
+    {
+        "recoveryRate": 9.6, 
+        "totalInfected": 6956
+    }, 
+    {
+        "recoveryRate": 9.8, 
+        "totalInfected": 6954
+    }
+]

@@ -1,0 +1,402 @@
+[
+    {
+        "percentInfected": 0, 
+        "totalInfected": 6934
+    }, 
+    {
+        "percentInfected": 1, 
+        "totalInfected": 13840
+    }, 
+    {
+        "percentInfected": 2, 
+        "totalInfected": 20670
+    }, 
+    {
+        "percentInfected": 3, 
+        "totalInfected": 27475
+    }, 
+    {
+        "percentInfected": 4, 
+        "totalInfected": 34218
+    }, 
+    {
+        "percentInfected": 5, 
+        "totalInfected": 40871
+    }, 
+    {
+        "percentInfected": 6, 
+        "totalInfected": 47494
+    }, 
+    {
+        "percentInfected": 7, 
+        "totalInfected": 54048
+    }, 
+    {
+        "percentInfected": 8, 
+        "totalInfected": 60565
+    }, 
+    {
+        "percentInfected": 9, 
+        "totalInfected": 67011
+    }, 
+    {
+        "percentInfected": 10, 
+        "totalInfected": 73405
+    }, 
+    {
+        "percentInfected": 11, 
+        "totalInfected": 79771
+    }, 
+    {
+        "percentInfected": 12, 
+        "totalInfected": 86086
+    }, 
+    {
+        "percentInfected": 13, 
+        "totalInfected": 92338
+    }, 
+    {
+        "percentInfected": 14, 
+        "totalInfected": 98588
+    }, 
+    {
+        "percentInfected": 15, 
+        "totalInfected": 104759
+    }, 
+    {
+        "percentInfected": 16, 
+        "totalInfected": 110841
+    }, 
+    {
+        "percentInfected": 17, 
+        "totalInfected": 116906
+    }, 
+    {
+        "percentInfected": 18, 
+        "totalInfected": 122884
+    }, 
+    {
+        "percentInfected": 19, 
+        "totalInfected": 128841
+    }, 
+    {
+        "percentInfected": 20, 
+        "totalInfected": 134740
+    }, 
+    {
+        "percentInfected": 21, 
+        "totalInfected": 140610
+    }, 
+    {
+        "percentInfected": 22, 
+        "totalInfected": 146435
+    }, 
+    {
+        "percentInfected": 23, 
+        "totalInfected": 152169
+    }, 
+    {
+        "percentInfected": 24, 
+        "totalInfected": 157844
+    }, 
+    {
+        "percentInfected": 25, 
+        "totalInfected": 163520
+    }, 
+    {
+        "percentInfected": 26, 
+        "totalInfected": 169157
+    }, 
+    {
+        "percentInfected": 27, 
+        "totalInfected": 174747
+    }, 
+    {
+        "percentInfected": 28, 
+        "totalInfected": 180276
+    }, 
+    {
+        "percentInfected": 29, 
+        "totalInfected": 185694
+    }, 
+    {
+        "percentInfected": 30, 
+        "totalInfected": 191097
+    }, 
+    {
+        "percentInfected": 31, 
+        "totalInfected": 196486
+    }, 
+    {
+        "percentInfected": 32, 
+        "totalInfected": 201805
+    }, 
+    {
+        "percentInfected": 33, 
+        "totalInfected": 207115
+    }, 
+    {
+        "percentInfected": 34, 
+        "totalInfected": 212388
+    }, 
+    {
+        "percentInfected": 35, 
+        "totalInfected": 217615
+    }, 
+    {
+        "percentInfected": 36, 
+        "totalInfected": 222808
+    }, 
+    {
+        "percentInfected": 37, 
+        "totalInfected": 227874
+    }, 
+    {
+        "percentInfected": 38, 
+        "totalInfected": 232984
+    }, 
+    {
+        "percentInfected": 39, 
+        "totalInfected": 238002
+    }, 
+    {
+        "percentInfected": 40, 
+        "totalInfected": 243064
+    }, 
+    {
+        "percentInfected": 41, 
+        "totalInfected": 248018
+    }, 
+    {
+        "percentInfected": 42, 
+        "totalInfected": 252979
+    }, 
+    {
+        "percentInfected": 43, 
+        "totalInfected": 257734
+    }, 
+    {
+        "percentInfected": 44, 
+        "totalInfected": 262574
+    }, 
+    {
+        "percentInfected": 45, 
+        "totalInfected": 267434
+    }, 
+    {
+        "percentInfected": 46, 
+        "totalInfected": 272143
+    }, 
+    {
+        "percentInfected": 47, 
+        "totalInfected": 276855
+    }, 
+    {
+        "percentInfected": 48, 
+        "totalInfected": 281533
+    }, 
+    {
+        "percentInfected": 49, 
+        "totalInfected": 286209
+    }, 
+    {
+        "percentInfected": 50, 
+        "totalInfected": 290834
+    }, 
+    {
+        "percentInfected": 51, 
+        "totalInfected": 295376
+    }, 
+    {
+        "percentInfected": 52, 
+        "totalInfected": 299867
+    }, 
+    {
+        "percentInfected": 53, 
+        "totalInfected": 304290
+    }, 
+    {
+        "percentInfected": 54, 
+        "totalInfected": 308628
+    }, 
+    {
+        "percentInfected": 55, 
+        "totalInfected": 313053
+    }, 
+    {
+        "percentInfected": 56, 
+        "totalInfected": 317423
+    }, 
+    {
+        "percentInfected": 57, 
+        "totalInfected": 321594
+    }, 
+    {
+        "percentInfected": 58, 
+        "totalInfected": 325755
+    }, 
+    {
+        "percentInfected": 59, 
+        "totalInfected": 329783
+    }, 
+    {
+        "percentInfected": 60, 
+        "totalInfected": 333782
+    }, 
+    {
+        "percentInfected": 61, 
+        "totalInfected": 337645
+    }, 
+    {
+        "percentInfected": 62, 
+        "totalInfected": 341504
+    }, 
+    {
+        "percentInfected": 63, 
+        "totalInfected": 345407
+    }, 
+    {
+        "percentInfected": 64, 
+        "totalInfected": 349091
+    }, 
+    {
+        "percentInfected": 65, 
+        "totalInfected": 352635
+    }, 
+    {
+        "percentInfected": 66, 
+        "totalInfected": 356097
+    }, 
+    {
+        "percentInfected": 67, 
+        "totalInfected": 359742
+    }, 
+    {
+        "percentInfected": 68, 
+        "totalInfected": 363444
+    }, 
+    {
+        "percentInfected": 69, 
+        "totalInfected": 366801
+    }, 
+    {
+        "percentInfected": 70, 
+        "totalInfected": 369848
+    }, 
+    {
+        "percentInfected": 71, 
+        "totalInfected": 373136
+    }, 
+    {
+        "percentInfected": 72, 
+        "totalInfected": 376233
+    }, 
+    {
+        "percentInfected": 73, 
+        "totalInfected": 378972
+    }, 
+    {
+        "percentInfected": 74, 
+        "totalInfected": 381927
+    }, 
+    {
+        "percentInfected": 75, 
+        "totalInfected": 384795
+    }, 
+    {
+        "percentInfected": 76, 
+        "totalInfected": 387415
+    }, 
+    {
+        "percentInfected": 77, 
+        "totalInfected": 390206
+    }, 
+    {
+        "percentInfected": 78, 
+        "totalInfected": 392977
+    }, 
+    {
+        "percentInfected": 79, 
+        "totalInfected": 395832
+    }, 
+    {
+        "percentInfected": 80, 
+        "totalInfected": 398239
+    }, 
+    {
+        "percentInfected": 81, 
+        "totalInfected": 400926
+    }, 
+    {
+        "percentInfected": 82, 
+        "totalInfected": 403558
+    }, 
+    {
+        "percentInfected": 83, 
+        "totalInfected": 405908
+    }, 
+    {
+        "percentInfected": 84, 
+        "totalInfected": 408049
+    }, 
+    {
+        "percentInfected": 85, 
+        "totalInfected": 410524
+    }, 
+    {
+        "percentInfected": 86, 
+        "totalInfected": 412894
+    }, 
+    {
+        "percentInfected": 87, 
+        "totalInfected": 415032
+    }, 
+    {
+        "percentInfected": 88, 
+        "totalInfected": 417183
+    }, 
+    {
+        "percentInfected": 89, 
+        "totalInfected": 419174
+    }, 
+    {
+        "percentInfected": 90, 
+        "totalInfected": 421105
+    }, 
+    {
+        "percentInfected": 91, 
+        "totalInfected": 423167
+    }, 
+    {
+        "percentInfected": 92, 
+        "totalInfected": 424999
+    }, 
+    {
+        "percentInfected": 93, 
+        "totalInfected": 426943
+    }, 
+    {
+        "percentInfected": 94, 
+        "totalInfected": 428742
+    }, 
+    {
+        "percentInfected": 95, 
+        "totalInfected": 430473
+    }, 
+    {
+        "percentInfected": 96, 
+        "totalInfected": 432188
+    }, 
+    {
+        "percentInfected": 97, 
+        "totalInfected": 433848
+    }, 
+    {
+        "percentInfected": 98, 
+        "totalInfected": 435147
+    }, 
+    {
+        "percentInfected": 99, 
+        "totalInfected": 436584
+    }
+]

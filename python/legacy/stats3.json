@@ -1,0 +1,1052 @@
+[
+    {
+        "timeInstant": 1, 
+        "numberOfInfectedNodes": 12, 
+        "numberOfNewlyInfectedNodes": 2, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 2, 
+        "numberOfInfectedNodes": 16, 
+        "numberOfNewlyInfectedNodes": 4, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 3, 
+        "numberOfInfectedNodes": 22, 
+        "numberOfNewlyInfectedNodes": 5, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 4, 
+        "numberOfInfectedNodes": 28, 
+        "numberOfNewlyInfectedNodes": 6, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 5, 
+        "numberOfInfectedNodes": 36, 
+        "numberOfNewlyInfectedNodes": 7, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 6, 
+        "numberOfInfectedNodes": 46, 
+        "numberOfNewlyInfectedNodes": 8, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 7, 
+        "numberOfInfectedNodes": 45, 
+        "numberOfNewlyInfectedNodes": 8, 
+        "numberOfRecoveredNodes": 10, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 8, 
+        "numberOfInfectedNodes": 53, 
+        "numberOfNewlyInfectedNodes": 9, 
+        "numberOfRecoveredNodes": 2, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 9, 
+        "numberOfInfectedNodes": 62, 
+        "numberOfNewlyInfectedNodes": 12, 
+        "numberOfRecoveredNodes": 4, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 10, 
+        "numberOfInfectedNodes": 72, 
+        "numberOfNewlyInfectedNodes": 13, 
+        "numberOfRecoveredNodes": 5, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 11, 
+        "numberOfInfectedNodes": 82, 
+        "numberOfNewlyInfectedNodes": 15, 
+        "numberOfRecoveredNodes": 6, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 12, 
+        "numberOfInfectedNodes": 90, 
+        "numberOfNewlyInfectedNodes": 14, 
+        "numberOfRecoveredNodes": 8, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 13, 
+        "numberOfInfectedNodes": 101, 
+        "numberOfNewlyInfectedNodes": 18, 
+        "numberOfRecoveredNodes": 9, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 14, 
+        "numberOfInfectedNodes": 112, 
+        "numberOfNewlyInfectedNodes": 18, 
+        "numberOfRecoveredNodes": 9, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 15, 
+        "numberOfInfectedNodes": 126, 
+        "numberOfNewlyInfectedNodes": 22, 
+        "numberOfRecoveredNodes": 10, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 16, 
+        "numberOfInfectedNodes": 137, 
+        "numberOfNewlyInfectedNodes": 22, 
+        "numberOfRecoveredNodes": 13, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 17, 
+        "numberOfInfectedNodes": 150, 
+        "numberOfNewlyInfectedNodes": 25, 
+        "numberOfRecoveredNodes": 15, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 18, 
+        "numberOfInfectedNodes": 166, 
+        "numberOfNewlyInfectedNodes": 29, 
+        "numberOfRecoveredNodes": 16, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 19, 
+        "numberOfInfectedNodes": 183, 
+        "numberOfNewlyInfectedNodes": 30, 
+        "numberOfRecoveredNodes": 16, 
+        "numberOfNodesInfectedByDispersion": 3
+    }, 
+    {
+        "timeInstant": 20, 
+        "numberOfInfectedNodes": 200, 
+        "numberOfNewlyInfectedNodes": 34, 
+        "numberOfRecoveredNodes": 20, 
+        "numberOfNodesInfectedByDispersion": 3
+    }, 
+    {
+        "timeInstant": 21, 
+        "numberOfInfectedNodes": 220, 
+        "numberOfNewlyInfectedNodes": 36, 
+        "numberOfRecoveredNodes": 20, 
+        "numberOfNodesInfectedByDispersion": 3
+    }, 
+    {
+        "timeInstant": 22, 
+        "numberOfInfectedNodes": 241, 
+        "numberOfNewlyInfectedNodes": 41, 
+        "numberOfRecoveredNodes": 25, 
+        "numberOfNodesInfectedByDispersion": 4
+    }, 
+    {
+        "timeInstant": 23, 
+        "numberOfInfectedNodes": 264, 
+        "numberOfNewlyInfectedNodes": 44, 
+        "numberOfRecoveredNodes": 25, 
+        "numberOfNodesInfectedByDispersion": 4
+    }, 
+    {
+        "timeInstant": 24, 
+        "numberOfInfectedNodes": 290, 
+        "numberOfNewlyInfectedNodes": 49, 
+        "numberOfRecoveredNodes": 28, 
+        "numberOfNodesInfectedByDispersion": 5
+    }, 
+    {
+        "timeInstant": 25, 
+        "numberOfInfectedNodes": 316, 
+        "numberOfNewlyInfectedNodes": 52, 
+        "numberOfRecoveredNodes": 32, 
+        "numberOfNodesInfectedByDispersion": 5
+    }, 
+    {
+        "timeInstant": 26, 
+        "numberOfInfectedNodes": 345, 
+        "numberOfNewlyInfectedNodes": 57, 
+        "numberOfRecoveredNodes": 34, 
+        "numberOfNodesInfectedByDispersion": 6
+    }, 
+    {
+        "timeInstant": 27, 
+        "numberOfInfectedNodes": 376, 
+        "numberOfNewlyInfectedNodes": 62, 
+        "numberOfRecoveredNodes": 38, 
+        "numberOfNodesInfectedByDispersion": 6
+    }, 
+    {
+        "timeInstant": 28, 
+        "numberOfInfectedNodes": 410, 
+        "numberOfNewlyInfectedNodes": 67, 
+        "numberOfRecoveredNodes": 41, 
+        "numberOfNodesInfectedByDispersion": 7
+    }, 
+    {
+        "timeInstant": 29, 
+        "numberOfInfectedNodes": 443, 
+        "numberOfNewlyInfectedNodes": 70, 
+        "numberOfRecoveredNodes": 45, 
+        "numberOfNodesInfectedByDispersion": 7
+    }, 
+    {
+        "timeInstant": 30, 
+        "numberOfInfectedNodes": 476, 
+        "numberOfNewlyInfectedNodes": 74, 
+        "numberOfRecoveredNodes": 49, 
+        "numberOfNodesInfectedByDispersion": 8
+    }, 
+    {
+        "timeInstant": 31, 
+        "numberOfInfectedNodes": 510, 
+        "numberOfNewlyInfectedNodes": 79, 
+        "numberOfRecoveredNodes": 54, 
+        "numberOfNodesInfectedByDispersion": 9
+    }, 
+    {
+        "timeInstant": 32, 
+        "numberOfInfectedNodes": 546, 
+        "numberOfNewlyInfectedNodes": 85, 
+        "numberOfRecoveredNodes": 58, 
+        "numberOfNodesInfectedByDispersion": 9
+    }, 
+    {
+        "timeInstant": 33, 
+        "numberOfInfectedNodes": 580, 
+        "numberOfNewlyInfectedNodes": 88, 
+        "numberOfRecoveredNodes": 64, 
+        "numberOfNodesInfectedByDispersion": 10
+    }, 
+    {
+        "timeInstant": 34, 
+        "numberOfInfectedNodes": 614, 
+        "numberOfNewlyInfectedNodes": 92, 
+        "numberOfRecoveredNodes": 69, 
+        "numberOfNodesInfectedByDispersion": 10
+    }, 
+    {
+        "timeInstant": 35, 
+        "numberOfInfectedNodes": 650, 
+        "numberOfNewlyInfectedNodes": 100, 
+        "numberOfRecoveredNodes": 75, 
+        "numberOfNodesInfectedByDispersion": 11
+    }, 
+    {
+        "timeInstant": 36, 
+        "numberOfInfectedNodes": 684, 
+        "numberOfNewlyInfectedNodes": 100, 
+        "numberOfRecoveredNodes": 78, 
+        "numberOfNodesInfectedByDispersion": 11
+    }, 
+    {
+        "timeInstant": 37, 
+        "numberOfInfectedNodes": 723, 
+        "numberOfNewlyInfectedNodes": 109, 
+        "numberOfRecoveredNodes": 83, 
+        "numberOfNodesInfectedByDispersion": 12
+    }, 
+    {
+        "timeInstant": 38, 
+        "numberOfInfectedNodes": 758, 
+        "numberOfNewlyInfectedNodes": 110, 
+        "numberOfRecoveredNodes": 89, 
+        "numberOfNodesInfectedByDispersion": 13
+    }, 
+    {
+        "timeInstant": 39, 
+        "numberOfInfectedNodes": 794, 
+        "numberOfNewlyInfectedNodes": 118, 
+        "numberOfRecoveredNodes": 95, 
+        "numberOfNodesInfectedByDispersion": 13
+    }, 
+    {
+        "timeInstant": 40, 
+        "numberOfInfectedNodes": 828, 
+        "numberOfNewlyInfectedNodes": 117, 
+        "numberOfRecoveredNodes": 98, 
+        "numberOfNodesInfectedByDispersion": 14
+    }, 
+    {
+        "timeInstant": 41, 
+        "numberOfInfectedNodes": 861, 
+        "numberOfNewlyInfectedNodes": 122, 
+        "numberOfRecoveredNodes": 104, 
+        "numberOfNodesInfectedByDispersion": 15
+    }, 
+    {
+        "timeInstant": 42, 
+        "numberOfInfectedNodes": 891, 
+        "numberOfNewlyInfectedNodes": 126, 
+        "numberOfRecoveredNodes": 112, 
+        "numberOfNodesInfectedByDispersion": 15
+    }, 
+    {
+        "timeInstant": 43, 
+        "numberOfInfectedNodes": 923, 
+        "numberOfNewlyInfectedNodes": 129, 
+        "numberOfRecoveredNodes": 113, 
+        "numberOfNodesInfectedByDispersion": 16
+    }, 
+    {
+        "timeInstant": 44, 
+        "numberOfInfectedNodes": 944, 
+        "numberOfNewlyInfectedNodes": 127, 
+        "numberOfRecoveredNodes": 123, 
+        "numberOfNodesInfectedByDispersion": 16
+    }, 
+    {
+        "timeInstant": 45, 
+        "numberOfInfectedNodes": 964, 
+        "numberOfNewlyInfectedNodes": 127, 
+        "numberOfRecoveredNodes": 124, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 46, 
+        "numberOfInfectedNodes": 979, 
+        "numberOfNewlyInfectedNodes": 130, 
+        "numberOfRecoveredNodes": 132, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 47, 
+        "numberOfInfectedNodes": 990, 
+        "numberOfNewlyInfectedNodes": 127, 
+        "numberOfRecoveredNodes": 133, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 48, 
+        "numberOfInfectedNodes": 1001, 
+        "numberOfNewlyInfectedNodes": 130, 
+        "numberOfRecoveredNodes": 137, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 49, 
+        "numberOfInfectedNodes": 1003, 
+        "numberOfNewlyInfectedNodes": 126, 
+        "numberOfRecoveredNodes": 142, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 50, 
+        "numberOfInfectedNodes": 1000, 
+        "numberOfNewlyInfectedNodes": 126, 
+        "numberOfRecoveredNodes": 146, 
+        "numberOfNodesInfectedByDispersion": 18
+    }, 
+    {
+        "timeInstant": 51, 
+        "numberOfInfectedNodes": 997, 
+        "numberOfNewlyInfectedNodes": 123, 
+        "numberOfRecoveredNodes": 144, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 52, 
+        "numberOfInfectedNodes": 988, 
+        "numberOfNewlyInfectedNodes": 118, 
+        "numberOfRecoveredNodes": 144, 
+        "numberOfNodesInfectedByDispersion": 18
+    }, 
+    {
+        "timeInstant": 53, 
+        "numberOfInfectedNodes": 971, 
+        "numberOfNewlyInfectedNodes": 113, 
+        "numberOfRecoveredNodes": 147, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 54, 
+        "numberOfInfectedNodes": 957, 
+        "numberOfNewlyInfectedNodes": 112, 
+        "numberOfRecoveredNodes": 144, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 55, 
+        "numberOfInfectedNodes": 931, 
+        "numberOfNewlyInfectedNodes": 105, 
+        "numberOfRecoveredNodes": 148, 
+        "numberOfNodesInfectedByDispersion": 17
+    }, 
+    {
+        "timeInstant": 56, 
+        "numberOfInfectedNodes": 906, 
+        "numberOfNewlyInfectedNodes": 102, 
+        "numberOfRecoveredNodes": 144, 
+        "numberOfNodesInfectedByDispersion": 16
+    }, 
+    {
+        "timeInstant": 57, 
+        "numberOfInfectedNodes": 875, 
+        "numberOfNewlyInfectedNodes": 96, 
+        "numberOfRecoveredNodes": 144, 
+        "numberOfNodesInfectedByDispersion": 16
+    }, 
+    {
+        "timeInstant": 58, 
+        "numberOfInfectedNodes": 845, 
+        "numberOfNewlyInfectedNodes": 95, 
+        "numberOfRecoveredNodes": 141, 
+        "numberOfNodesInfectedByDispersion": 15
+    }, 
+    {
+        "timeInstant": 59, 
+        "numberOfInfectedNodes": 814, 
+        "numberOfNewlyInfectedNodes": 89, 
+        "numberOfRecoveredNodes": 135, 
+        "numberOfNodesInfectedByDispersion": 15
+    }, 
+    {
+        "timeInstant": 60, 
+        "numberOfInfectedNodes": 779, 
+        "numberOfNewlyInfectedNodes": 81, 
+        "numberOfRecoveredNodes": 131, 
+        "numberOfNodesInfectedByDispersion": 14
+    }, 
+    {
+        "timeInstant": 61, 
+        "numberOfInfectedNodes": 742, 
+        "numberOfNewlyInfectedNodes": 78, 
+        "numberOfRecoveredNodes": 129, 
+        "numberOfNodesInfectedByDispersion": 14
+    }, 
+    {
+        "timeInstant": 62, 
+        "numberOfInfectedNodes": 707, 
+        "numberOfNewlyInfectedNodes": 73, 
+        "numberOfRecoveredNodes": 122, 
+        "numberOfNodesInfectedByDispersion": 13
+    }, 
+    {
+        "timeInstant": 63, 
+        "numberOfInfectedNodes": 669, 
+        "numberOfNewlyInfectedNodes": 67, 
+        "numberOfRecoveredNodes": 118, 
+        "numberOfNodesInfectedByDispersion": 13
+    }, 
+    {
+        "timeInstant": 64, 
+        "numberOfInfectedNodes": 634, 
+        "numberOfNewlyInfectedNodes": 66, 
+        "numberOfRecoveredNodes": 112, 
+        "numberOfNodesInfectedByDispersion": 12
+    }, 
+    {
+        "timeInstant": 65, 
+        "numberOfInfectedNodes": 598, 
+        "numberOfNewlyInfectedNodes": 62, 
+        "numberOfRecoveredNodes": 110, 
+        "numberOfNodesInfectedByDispersion": 11
+    }, 
+    {
+        "timeInstant": 66, 
+        "numberOfInfectedNodes": 563, 
+        "numberOfNewlyInfectedNodes": 57, 
+        "numberOfRecoveredNodes": 104, 
+        "numberOfNodesInfectedByDispersion": 11
+    }, 
+    {
+        "timeInstant": 67, 
+        "numberOfInfectedNodes": 530, 
+        "numberOfNewlyInfectedNodes": 52, 
+        "numberOfRecoveredNodes": 96, 
+        "numberOfNodesInfectedByDispersion": 10
+    }, 
+    {
+        "timeInstant": 68, 
+        "numberOfInfectedNodes": 495, 
+        "numberOfNewlyInfectedNodes": 47, 
+        "numberOfRecoveredNodes": 91, 
+        "numberOfNodesInfectedByDispersion": 10
+    }, 
+    {
+        "timeInstant": 69, 
+        "numberOfInfectedNodes": 462, 
+        "numberOfNewlyInfectedNodes": 44, 
+        "numberOfRecoveredNodes": 86, 
+        "numberOfNodesInfectedByDispersion": 9
+    }, 
+    {
+        "timeInstant": 70, 
+        "numberOfInfectedNodes": 434, 
+        "numberOfNewlyInfectedNodes": 42, 
+        "numberOfRecoveredNodes": 79, 
+        "numberOfNodesInfectedByDispersion": 8
+    }, 
+    {
+        "timeInstant": 71, 
+        "numberOfInfectedNodes": 404, 
+        "numberOfNewlyInfectedNodes": 39, 
+        "numberOfRecoveredNodes": 77, 
+        "numberOfNodesInfectedByDispersion": 8
+    }, 
+    {
+        "timeInstant": 72, 
+        "numberOfInfectedNodes": 374, 
+        "numberOfNewlyInfectedNodes": 35, 
+        "numberOfRecoveredNodes": 73, 
+        "numberOfNodesInfectedByDispersion": 7
+    }, 
+    {
+        "timeInstant": 73, 
+        "numberOfInfectedNodes": 345, 
+        "numberOfNewlyInfectedNodes": 31, 
+        "numberOfRecoveredNodes": 68, 
+        "numberOfNodesInfectedByDispersion": 7
+    }, 
+    {
+        "timeInstant": 74, 
+        "numberOfInfectedNodes": 318, 
+        "numberOfNewlyInfectedNodes": 29, 
+        "numberOfRecoveredNodes": 62, 
+        "numberOfNodesInfectedByDispersion": 6
+    }, 
+    {
+        "timeInstant": 75, 
+        "numberOfInfectedNodes": 295, 
+        "numberOfNewlyInfectedNodes": 27, 
+        "numberOfRecoveredNodes": 56, 
+        "numberOfNodesInfectedByDispersion": 6
+    }, 
+    {
+        "timeInstant": 76, 
+        "numberOfInfectedNodes": 273, 
+        "numberOfNewlyInfectedNodes": 25, 
+        "numberOfRecoveredNodes": 53, 
+        "numberOfNodesInfectedByDispersion": 5
+    }, 
+    {
+        "timeInstant": 77, 
+        "numberOfInfectedNodes": 251, 
+        "numberOfNewlyInfectedNodes": 23, 
+        "numberOfRecoveredNodes": 51, 
+        "numberOfNodesInfectedByDispersion": 5
+    }, 
+    {
+        "timeInstant": 78, 
+        "numberOfInfectedNodes": 230, 
+        "numberOfNewlyInfectedNodes": 20, 
+        "numberOfRecoveredNodes": 47, 
+        "numberOfNodesInfectedByDispersion": 4
+    }, 
+    {
+        "timeInstant": 79, 
+        "numberOfInfectedNodes": 212, 
+        "numberOfNewlyInfectedNodes": 20, 
+        "numberOfRecoveredNodes": 42, 
+        "numberOfNodesInfectedByDispersion": 4
+    }, 
+    {
+        "timeInstant": 80, 
+        "numberOfInfectedNodes": 197, 
+        "numberOfNewlyInfectedNodes": 18, 
+        "numberOfRecoveredNodes": 38, 
+        "numberOfNodesInfectedByDispersion": 4
+    }, 
+    {
+        "timeInstant": 81, 
+        "numberOfInfectedNodes": 181, 
+        "numberOfNewlyInfectedNodes": 15, 
+        "numberOfRecoveredNodes": 35, 
+        "numberOfNodesInfectedByDispersion": 4
+    }, 
+    {
+        "timeInstant": 82, 
+        "numberOfInfectedNodes": 166, 
+        "numberOfNewlyInfectedNodes": 15, 
+        "numberOfRecoveredNodes": 33, 
+        "numberOfNodesInfectedByDispersion": 3
+    }, 
+    {
+        "timeInstant": 83, 
+        "numberOfInfectedNodes": 154, 
+        "numberOfNewlyInfectedNodes": 15, 
+        "numberOfRecoveredNodes": 30, 
+        "numberOfNodesInfectedByDispersion": 3
+    }, 
+    {
+        "timeInstant": 84, 
+        "numberOfInfectedNodes": 141, 
+        "numberOfNewlyInfectedNodes": 13, 
+        "numberOfRecoveredNodes": 28, 
+        "numberOfNodesInfectedByDispersion": 3
+    }, 
+    {
+        "timeInstant": 85, 
+        "numberOfInfectedNodes": 131, 
+        "numberOfNewlyInfectedNodes": 12, 
+        "numberOfRecoveredNodes": 25, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 86, 
+        "numberOfInfectedNodes": 119, 
+        "numberOfNewlyInfectedNodes": 10, 
+        "numberOfRecoveredNodes": 24, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 87, 
+        "numberOfInfectedNodes": 108, 
+        "numberOfNewlyInfectedNodes": 9, 
+        "numberOfRecoveredNodes": 22, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 88, 
+        "numberOfInfectedNodes": 100, 
+        "numberOfNewlyInfectedNodes": 9, 
+        "numberOfRecoveredNodes": 18, 
+        "numberOfNodesInfectedByDispersion": 2
+    }, 
+    {
+        "timeInstant": 89, 
+        "numberOfInfectedNodes": 92, 
+        "numberOfNewlyInfectedNodes": 8, 
+        "numberOfRecoveredNodes": 18, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 90, 
+        "numberOfInfectedNodes": 83, 
+        "numberOfNewlyInfectedNodes": 7, 
+        "numberOfRecoveredNodes": 18, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 91, 
+        "numberOfInfectedNodes": 76, 
+        "numberOfNewlyInfectedNodes": 6, 
+        "numberOfRecoveredNodes": 15, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 92, 
+        "numberOfInfectedNodes": 68, 
+        "numberOfNewlyInfectedNodes": 5, 
+        "numberOfRecoveredNodes": 15, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 93, 
+        "numberOfInfectedNodes": 62, 
+        "numberOfNewlyInfectedNodes": 5, 
+        "numberOfRecoveredNodes": 12, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 94, 
+        "numberOfInfectedNodes": 58, 
+        "numberOfNewlyInfectedNodes": 5, 
+        "numberOfRecoveredNodes": 11, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 95, 
+        "numberOfInfectedNodes": 52, 
+        "numberOfNewlyInfectedNodes": 4, 
+        "numberOfRecoveredNodes": 11, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 96, 
+        "numberOfInfectedNodes": 46, 
+        "numberOfNewlyInfectedNodes": 3, 
+        "numberOfRecoveredNodes": 10, 
+        "numberOfNodesInfectedByDispersion": 1
+    }, 
+    {
+        "timeInstant": 97, 
+        "numberOfInfectedNodes": 42, 
+        "numberOfNewlyInfectedNodes": 3, 
+        "numberOfRecoveredNodes": 9, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 98, 
+        "numberOfInfectedNodes": 37, 
+        "numberOfNewlyInfectedNodes": 3, 
+        "numberOfRecoveredNodes": 8, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 99, 
+        "numberOfInfectedNodes": 35, 
+        "numberOfNewlyInfectedNodes": 3, 
+        "numberOfRecoveredNodes": 6, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 100, 
+        "numberOfInfectedNodes": 32, 
+        "numberOfNewlyInfectedNodes": 3, 
+        "numberOfRecoveredNodes": 6, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 101, 
+        "numberOfInfectedNodes": 29, 
+        "numberOfNewlyInfectedNodes": 2, 
+        "numberOfRecoveredNodes": 6, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 102, 
+        "numberOfInfectedNodes": 27, 
+        "numberOfNewlyInfectedNodes": 2, 
+        "numberOfRecoveredNodes": 5, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 103, 
+        "numberOfInfectedNodes": 25, 
+        "numberOfNewlyInfectedNodes": 2, 
+        "numberOfRecoveredNodes": 4, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 104, 
+        "numberOfInfectedNodes": 23, 
+        "numberOfNewlyInfectedNodes": 2, 
+        "numberOfRecoveredNodes": 4, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 105, 
+        "numberOfInfectedNodes": 22, 
+        "numberOfNewlyInfectedNodes": 2, 
+        "numberOfRecoveredNodes": 4, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 106, 
+        "numberOfInfectedNodes": 20, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 4, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 107, 
+        "numberOfInfectedNodes": 18, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 4, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 108, 
+        "numberOfInfectedNodes": 16, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 3, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 109, 
+        "numberOfInfectedNodes": 14, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 3, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 110, 
+        "numberOfInfectedNodes": 14, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 2, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 111, 
+        "numberOfInfectedNodes": 12, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 2, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 112, 
+        "numberOfInfectedNodes": 11, 
+        "numberOfNewlyInfectedNodes": 1, 
+        "numberOfRecoveredNodes": 2, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 113, 
+        "numberOfInfectedNodes": 9, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 2, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 114, 
+        "numberOfInfectedNodes": 8, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 1, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 115, 
+        "numberOfInfectedNodes": 7, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 1, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 116, 
+        "numberOfInfectedNodes": 6, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 1, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 117, 
+        "numberOfInfectedNodes": 5, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 1, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 118, 
+        "numberOfInfectedNodes": 4, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 1, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 119, 
+        "numberOfInfectedNodes": 3, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 1, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 120, 
+        "numberOfInfectedNodes": 3, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 121, 
+        "numberOfInfectedNodes": 2, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 122, 
+        "numberOfInfectedNodes": 2, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 123, 
+        "numberOfInfectedNodes": 1, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 124, 
+        "numberOfInfectedNodes": 1, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 125, 
+        "numberOfInfectedNodes": 1, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 126, 
+        "numberOfInfectedNodes": 1, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 127, 
+        "numberOfInfectedNodes": 1, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 128, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 129, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 130, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 131, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 132, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 133, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 134, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 135, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 136, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 137, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 138, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 139, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 140, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 141, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 142, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 143, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 144, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 145, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 146, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 147, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 148, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 149, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }, 
+    {
+        "timeInstant": 150, 
+        "numberOfInfectedNodes": 0, 
+        "numberOfNewlyInfectedNodes": 0, 
+        "numberOfRecoveredNodes": 0, 
+        "numberOfNodesInfectedByDispersion": 0
+    }
+]

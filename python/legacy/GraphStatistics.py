@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-numberOfRunthroughs = 1
+numberOfRunthroughs = 30
 
 def GraphStatistics_encoder(obj):
     if isinstance(obj, GraphStatistics):
