@@ -10,7 +10,6 @@ class Network(object):
 
     def __init__(self):
 	self.graph = {}
-	adjacencyMatrix = [[0 for x in xrange(TOTAL_NODES)] for x in xrange(TOTAL_NODES)]
 	self._initializeNetwork()
 
     def _initializeNetwork(self):
