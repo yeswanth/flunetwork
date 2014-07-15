@@ -3,8 +3,8 @@
 
 import random
 
-from Config import *
-from Node import Node
+from config import TOTAL_NODES, TOTAL_TRIES 
+from node import Node
 
 class Network(object):
 

@@ -3,7 +3,7 @@
 
 import random
 
-from Config import *
+from config import MEAN_NEIGHBOURS, STANDARD_DEVIATION 
 
 class Node(object):
 

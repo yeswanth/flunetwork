@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from Network import Network
+from network import Network
 
 network = Network()
