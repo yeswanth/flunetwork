@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import random
+import logging
 
 from config import TOTAL_NODES, TOTAL_TRIES 
 from node import Node
@@ -9,11 +10,12 @@ from node import Node
 class Network(object):
 
     def __init__(self):
+        self.logger = logging.getLogger(__name__)
 	self.graph = {}
 	self._initializeNetwork()
 
     def _initializeNetwork(self):
-	print "Initializing network"
+        self.logger.info("Initializing network")
 	current_node = 0
 	while current_node < TOTAL_NODES:
 	    self.graph[current_node] = Node()
@@ -39,13 +41,14 @@ class Network(object):
 		    self.graph[neighbour].neighbours.add(current_node)
 		    self.graph[neighbour].no_of_neighbours -= 1
 		    self.graph[current_node].no_of_neighbours -= 1
-		    print "Adding link between ", current_node, " and ", neighbour
+                    self.logger.info("Adding link between %d and %d",current_node,neighbour)
 		    break
 
 		count -= 1
 		
-	    print "Number of neighbours for node ", current_node, " is = ", len(self.graph[current_node].neighbours)
+            self.logger.debug("Number of neighbours for node %d is = %d",current_node, 
+                                    len(self.graph[current_node].neighbours))
 	    current_node += 1
 	    
-	print "Finished initializing network"
+        self.logger.info("Finished initializing network")
 

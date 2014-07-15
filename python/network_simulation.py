@@ -2,5 +2,13 @@
 # -*- coding: utf-8 -*-
 
 from network import Network
+from log import configure_logger 
 
-network = Network()
+def main():
+    configure_logger()
+    network = Network()
+
+if __name__ == '__main__':
+    main()
+
+

@@ -9,3 +9,5 @@ STANDARD_DEVIATION = 2
 #code settings
 TOTAL_TRIES = 5
 
+#log settings 
+LOG_FILE = '/tmp/flunetwork.log'
